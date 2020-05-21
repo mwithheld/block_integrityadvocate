@@ -3,9 +3,15 @@ Description of DataTables third-party code included in this plugin.
 ------
 
 The source files in the <this_plugin_dir>/amd/src directory are downloaded from
-https://datatables.net.
+https://datatables.net/download/#bs4/dt-1.10.21
+Where:
+- Step 1. Choose a styling framework = Bootstrap 4 
+- Step 2. Select packages = DataTables
+- Extensions = <none>
+- Step 3. Pick a download method = Download, uncheck Minify, check Concatenate > Download
+Then unzip the package and copy datatables.js to amd/src/jquery.dataTables.js
 
-They are built using a BitBucket pipeline within this repository.
+The build/ files are built from the src/ files using a BitBucket pipeline within this repository.
 
 -----
 Config
