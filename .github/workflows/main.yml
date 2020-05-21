@@ -17,10 +17,10 @@ jobs:
       - uses: actions/checkout@master
         with:
           path: src 
-      - name: PHPStan
-        uses: docker://jakzal/phpqa:php7.4-alpine
-        with:
-          args: phpstan analyze src/ -l 1
+      #- name: PHPStan
+      #  uses: docker://jakzal/phpqa:php7.4-alpine
+      #  with:
+      #    args: phpstan analyze src/ -l 1 autoload_directories 
       - name: PHP-CS-Fixer
         uses: docker://jakzal/phpqa:php7.4-alpine
         with:
